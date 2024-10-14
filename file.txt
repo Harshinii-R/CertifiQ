@@ -1,0 +1,367 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CertifiQ Homepage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header class="header-container">
+        <div class="logo">
+            <img src="Untitled design.png" alt="CertifiQ Logo"> <!-- Placeholder for logo image -->
+            <h1>CertifiQ</h1>
+        </div>
+        <nav class="nav-menu">
+            <a href="#">Home</a>
+            <a href="#">Dashboard</a>
+            <div class="dropdown">
+                <a href="#">Templates</a>
+                <div class="dropdown-menu">
+                    <a href="#">Template 1</a>
+                    <a href="#">Template 2</a>
+                </div>
+            </div>
+        </nav>
+        <div class="header-buttons">
+            <button class="btn-outline">Sign Up</button>
+            <button class="btn-primary">Log In</button>
+        </div>
+    </header>
+
+    <!-- Hero Section with Image -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Create Certificates That Inspire Achievement</h1>
+                <p>Simplify your certificate management with our user-friendly tools.</p>
+                <button class="btn-get-started">Get Started</button>
+            </div>
+            <div class="hero-image">
+                <img src="GuviCertification - 32ad72B691792n358g.png" alt="Hero Image"> <!-- Replace with the actual image path -->
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works">
+        <h2>How does it work?</h2>
+        <p>Simplify Certificate Management in Three Easy Steps</p>
+        <div class="steps-container">
+            <div class="step">
+                <div class="circle">1</div>
+                <h3>Upload Data</h3>
+                <p>Import participant details from an Excel file for bulk certificate creation.</p>
+            </div>
+            <div class="step">
+                <div class="circle">2</div>
+                <h3>Customize Certificates</h3>
+                <p>Personalize certificates using themes and placeholders for names, event details, and dates.</p>
+            </div>
+            <div class="step">
+                <div class="circle">3</div>
+                <h3>Automate Distribution</h3>
+                <p>Distribute certificates automatically through email or enable bulk downloads.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="Untitled design.png" alt="CertifiQ Logo"> <!-- Placeholder for logo image -->
+                <span>CertifiQ</span>
+            </div>
+            <nav class="footer-menu">
+                <a href="#">Home</a>
+                <a href="#">Dashboard</a>
+                <a href="#">Templates</a>
+            </nav>
+        </div>
+        <p>&copy; 2024 CertifiQ. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>*/
+
+
+/* General Resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Section */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #1e00ff;
+    color: white;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #ccc;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    color: black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu a {
+    padding: 10px 20px;
+    display: block;
+    white-space: nowrap;
+    text-decoration: none;
+    color: black;
+    transition: background-color 0.3s;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f4f4f4;
+}
+
+.header-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.header-buttons .btn-outline,
+.header-buttons .btn-primary {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid white;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+}
+
+.header-buttons .btn-primary {
+    background-color: white;
+    color: #1e00ff;
+}
+
+.header-buttons .btn-primary:hover {
+    background-color: #ccc;
+    color: #1e00ff;
+}
+
+.header-buttons .btn-outline:hover {
+    background-color: white;
+    color: #1e00ff;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 20px;
+    background-color: #1e00ff;
+    color: white;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.btn-get-started {
+    background-color: white;
+    color: #1e00ff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+    border: none;
+}
+
+.btn-get-started:hover {
+    background-color: #ccc;
+}
+
+.hero-image img {
+    max-width: 400px;
+    width: 100%;
+}
+
+/* How It Works Section */
+.how-it-works {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: white;
+}
+
+.how-it-works h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.how-it-works p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.steps-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.step {
+    text-align: center;
+    max-width: 300px;
+    padding: 20px;
+}
+
+.circle {
+    width: 60px;
+    height: 60px;
+    background-color: #1e00ff;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    margin: 0 auto 20px;
+}
+
+.step h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.step p {
+    font-size: 16px;
+}
+
+/* Footer Section */
+footer {
+    background-color: #1e00ff;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.footer-menu {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-menu a {
+    color: white;
+    text-decoration: none;
+}
+
+footer p {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image {
+        margin-top: 30px;
+    }
+
+    .steps-container {
+        flex-direction: column;
+    }
+
+    .header-buttons {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
